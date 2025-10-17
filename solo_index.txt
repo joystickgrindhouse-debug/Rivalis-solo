@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rivalis — Solo Mode</title>
+  <link rel="stylesheet" href="solo_style.txt" />
+</head>
+<body>
+  <div id="solo-container">
+    <img id="solo-bg" src="../assets/Solo.png" alt="Solo Mode Background" />
+    <div id="overlay">
+      <h1>🔥 Solo Mode 🔥</h1>
+      <button id="startBtn">🎴 Start Workout</button>
+      <p id="cameraStatus">📷 Waiting for camera...</p>
+      <video id="cameraFeed" autoplay playsinline muted></video>
+      <canvas id="output"></canvas>
+      <div id="cardDisplay"></div>
+      <div id="repDisplay"></div>
+      <div id="diceDisplay"></div>
+    </div>
+  </div>
+
+  <!-- Firebase (CDN modular) -->
+  <script type="module" src="firebase_config.txt"></script>
+
+  <!-- MediaPipe CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.5/pose.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.4/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.4/drawing_utils.js"></script>
+
+  <script type="module" src="solo_script.txt"></script>
+</body>
+</html>

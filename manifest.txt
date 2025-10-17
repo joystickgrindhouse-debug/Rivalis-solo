@@ -1,0 +1,4 @@
+name: Rivalis Solo Mode
+description: Solo Mode MVP for Rivalis — MediaPipe pose + Firebase dice banking
+author: Rivalis Team
+version: 1.0.0
